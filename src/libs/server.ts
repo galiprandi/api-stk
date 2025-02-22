@@ -1,5 +1,6 @@
 import cors from "cors";
 import express from "express";
+import { productsRouter } from "../routes/products";
 
 const app = express();
 
@@ -11,6 +12,8 @@ app.use(express.json());
 app.get("/api/health-check", (_req, res) => {
   res.json({ status: "ready", uptime: process.uptime() });
 });
+
+app.use("/api/products", productsRouter);
 
 // Exportar el servidor para usarlo en index.ts
 export { app };
