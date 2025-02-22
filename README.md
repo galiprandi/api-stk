@@ -5,5 +5,7 @@
 - Paso 3: Configuración del Servidor Express y primer endpoint
 - Paso 4: Agregar Pruebas Unitarias
 - Paso 5: Ruta /api/products
+- Paso 6: Implementar un Endpoint para Crear Productos
+
 
 
