@@ -7,6 +7,8 @@
 - Paso 5: Ruta /api/products
 - Paso 6: Implementar un Endpoint para Crear Productos
 - Paso 7: Implementar un Endpoint para Actualizar Productos
+- Paso 8: Implementar un Endpoint para Eliminar Productos
+
 
 
 
