@@ -14,4 +14,17 @@ router.post("/", (req, res) => {
     res.status(201).json(newProduct);
 });
 
+router.put("/:id", (req, res) => {
+    const productId = parseInt(req.params.id);
+    const updatedProduct = req.body;
+    const productIndex = products.findIndex((product) => product.id === productId);
+
+    // If product is not found, return 404
+    if (productIndex === -1) res.status(404).json({ message: "Product not found" });
+
+    // Update the product
+    products[productIndex] = { ...products[productIndex], ...updatedProduct };
+    res.json(products[productIndex]);
+});
+
 export { router as productsRouter };

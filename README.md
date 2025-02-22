@@ -6,6 +6,7 @@
 - Paso 4: Agregar Pruebas Unitarias
 - Paso 5: Ruta /api/products
 - Paso 6: Implementar un Endpoint para Crear Productos
+- Paso 7: Implementar un Endpoint para Actualizar Productos
 
 
 
