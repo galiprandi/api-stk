@@ -5,7 +5,8 @@ import { app } from '../libs/server'
 
 describe('DELETE /api/products/:id', () => {
 	it('should delete an existing product', async () => {
-		const productId = 1
+		const productId = products[0].id
+		console.log('productId', productId)
 		const response = await request(app).delete(`/api/products/${productId}`)
 
 		expect(response.status).toBe(200)
